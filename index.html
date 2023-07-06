@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cheung Tak Sing's Personal Website" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Cheung Tak Sing's Personal Website</title>
+  </head>
+  <body onload="welcome1Function()">
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#home"
+                ><i class="fa-solid fa-house pe-2"></i>Home</a
+              >
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="vh-100 d-flex flex-column justify-content-center text-center"
+      id="home"
+    >
+      <div>
+        <h1 id="welcome1"></h1>
+        <hr />
+        <h2 id="welcome2"></h2>
+      </div>
+    </header>
+
+    <section id="about-me">
+      <div
+        class="d-flex flex-column p-5 justify-content-center align-items-center"
+      >
+        <div class="selfpic">
+          <img
+            src="./images/selfpic.jpg"
+            class="rounded-pill"
+            style="height: 40vh; padding: 8%"
+          />
+        </div>
+        <div class="bio">
+          <h2>About Me</h2>
+          <hr />
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills text-center">
+        <h2 class="glow text-primary">Skills I am learning</h2>
+        <hr />
+        <p class="animated_rainbow">
+          Right now I am learning to be a front-end web developer, and some of
+          the skills I am learning are
+        </p>
+      </div>
+      <div class="d-flex justify-content-around">
+        <div class="text-center">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_html5-512.png"
+            class="skills-image"
+          />
+          <h6 class="text-success">HTML</h6>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/css3-512.png"
+            class="skills-image"
+          />
+          <h6 class="text-success">CSS</h6>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png"
+            class="skills-image"
+          />
+          <h6 class="text-success">Javascript</h6>
+        </div>
+      </div>
+      <div class="other-skills text-center">
+        <h2 class="glow text-primary">Other Skills</h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png"
+            class="skills-image"
+          />
+          <h6 class="text-success">C++</h6>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+            class="skills-image"
+          />
+          <h6 class="text-success">Python</h6>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="skill-hover-text">And Something more</p>
+        <p class="hidden-text">Google and Ctrl-C + Ctrl-V</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <div class=""></div>
+    </section>
+
+    <!-- script -->
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/822cbd322d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- wow.js -->
+    <script src="./assets/js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- custom Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>

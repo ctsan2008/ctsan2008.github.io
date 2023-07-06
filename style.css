@@ -1,0 +1,123 @@
+body {
+  width: 100%;
+  /* background-color: rgba(188, 231, 238, 0.44); */
+}
+
+header {
+  background: url("./images/background.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: auto;
+  opacity: 0.8;
+  color: black;
+}
+
+#about-me {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(188, 231, 238, 0.44);
+}
+
+.bio {
+  height: auto;
+}
+
+#skills {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(221, 240, 102, 0.44);
+}
+
+.skills {
+  padding-top: 5%;
+}
+
+.other-skills {
+  padding-top: 1%;
+}
+
+.skills-image {
+  max-width: 35%;
+  min-width: 35%;
+  border: 5px solid rgb(223, 213, 213);
+  border-radius: 20%;
+}
+
+.skill-hover-text {
+  color: transparent;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.skill-hover-text:hover + .hidden-text {
+  display: block;
+  color: red;
+}
+
+#hobbies {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(238, 188, 231, 0.44);
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.animated_rainbow {
+  font-family: Arial Black, Gadget, sans-serif;
+  animation: animatedBackground 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+  0% {
+    color: #ff8b00;
+  }
+  10% {
+    color: #e8ff00;
+  }
+  20% {
+    color: #5dff00;
+  }
+  30% {
+    color: #00ff2e;
+  }
+  40% {
+    color: #00ffb9;
+  }
+  50% {
+    color: #00b9ff;
+  }
+  60% {
+    color: #002eff;
+  }
+  70% {
+    color: #5d00ff;
+  }
+  80% {
+    color: #e800ff;
+  }
+  90% {
+    color: #ff008b;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8x #fff, 0 0 16px #fff, 0 0 24px #e60073, 0 0 32px #e60073,
+      0 0 40px #e60073, 0 0 48px #e60073, 0 0 56px #e60073;
+  }
+  to {
+    text-shadow: 0 0 16px #fff, 0 0 24px #ff4da6, 0 0 32px #ff4da6,
+      0 0 40px #ff4da6, 0 0 48px #ff4da6, 0 0 56px #ff4da6, 0 0 64px #ff4da6;
+  }
+}
