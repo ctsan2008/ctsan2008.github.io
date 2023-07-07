@@ -23,3 +23,37 @@ function welcome2Function() {
     setTimeout(welcome2Function, welcomeTextSpeed);
   }
 }
+
+function openHobbies(evt, hobbies) {
+  // Declare all variables
+  var i, hobbiesContent, tablinks;
+
+  // Get all elements with class="hobbies-content" and hide them
+  hobbiesContent = document.getElementsByClassName("hobbies-content");
+  for (i = 0; i < hobbiesContent.length; i++) {
+    hobbiesContent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(hobbies).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
+    document.getElementById("bio").className += " animate__slideInLeft";
+  }
+}
