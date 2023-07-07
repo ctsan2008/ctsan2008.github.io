@@ -21,8 +21,10 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/selfpic.jpg" />
     <title>Cheung Tak Sing's Personal Website</title>
   </head>
+
   <body onload="welcome1Function()">
     <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
@@ -77,10 +79,22 @@
             style="height: 40vh; padding: 8%"
           />
         </div>
-        <div class="bio">
-          <h2>About Me</h2>
+        <div class="bio text-center">
+          <h2 class="animate__animated animate__pulse animate__infinite">
+            About Me
+          </h2>
           <hr />
-          <p></p>
+          <p class="animate__animated" style="font-size: 1.2em" id="bio">
+            I am a recent electrical engineering graduate. I am 22 years old. I
+            find interest in mathematics and science-related topics and a bit
+            more in electrical and electronics, so I end up with an electrical
+            engineering degree. Throughout my studying journey, I had several
+            chances to get in touch with programming. I found myself capable and
+            enthusiastic in coding and it inspires me to be a developer. Right
+            now I am not a developer yet, but I have confidence that I will
+            become a game developer or software developer one day, and it all
+            begins with learning to be a web developer.
+          </p>
         </div>
       </div>
     </section>
@@ -143,7 +157,221 @@
     </section>
 
     <section id="hobbies">
-      <div class=""></div>
+      <div class="hobbies text-center text-bg-danger">
+        <h2>My Hobbies</h2>
+        <hr />
+      </div>
+      <h5 class="text-center">Basically only gaming and watching videos</h5>
+
+      <div
+        class="px-5 row row-cols-1 row-cols-md-3 text-center nav nav-pills nav-fill"
+      >
+        <div class="nav-item">
+          <button
+            type="button"
+            class="hobbies-btn btn btn-outline-primary nav-link tablinks active"
+            id="gaming-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#gaming"
+            role="tab"
+            aria-controls="gaming"
+            aria-selected="true"
+            onclick="openHobbies(event, 'gaming')"
+          >
+            Gaming
+          </button>
+        </div>
+        <div class="nav-item">
+          <button
+            type="button"
+            class="hobbies-btn btn btn-outline-primary nav-link tablinks"
+            id="arcade-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#arcade"
+            role="tab"
+            aria-controls="arcade"
+            aria-selected="false"
+            onclick="openHobbies(event, 'arcade')"
+          >
+            Arcade
+          </button>
+        </div>
+        <div class="nav-item">
+          <button
+            type="button"
+            class="hobbies-btn btn btn-outline-primary nav-link tablinks"
+            id="videos-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#videos"
+            role="tab"
+            aria-controls="videos"
+            aria-selected="false"
+            onclick="openHobbies(event, 'videos')"
+          >
+            Videos
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade show flex-wrap px-5 py-2 hobbies-content"
+        id="gaming"
+        role="tabpanel"
+        aria-labelledby="gaming-tab"
+        style="display: flex"
+      >
+        <div class="box">
+          <img
+            src="https://th.bing.com/th/id/R.bffcfe1444f2fa0aeaf3baa9aed564a7?rik=9Nal%2bEGO9y0Hhw&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2ficon-minecraft-64.png&ehk=D%2bnRs5J0IQcamr59OUpImnqmv3jX9fKjIcgIPf71304%3d&risl=&pid=ImgRaw&r=0"
+            class="hobbies-image"
+            alt="Minecraft"
+          />
+          <div class="overlay">Minecraft</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://media.playstation.com/is/image/SCEA/path-of-exile-logo-01-ps4-us-23oct2018?$native$"
+            class="hobbies-image"
+            alt="Path of Exile"
+          />
+          <div class="overlay">Path of Exile</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://lolpy.readthedocs.io/en/latest/_images/lol-logo.png"
+            class="hobbies-image"
+            alt="League of Legend"
+          />
+          <div class="overlay">League of Legend</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://th.bing.com/th/id/R.56f9dddf3a4bf89c92c01be5b33d35b3?rik=qdncbTnkq7rEoQ&pid=ImgRaw&r=0"
+            class="hobbies-image"
+            alt="Apex Legend"
+          />
+          <div class="overlay">Apex Legend</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.freeiconspng.com/uploads/csgo-icon-4.png"
+            class="hobbies-image"
+            alt="CS:GO"
+          />
+          <div class="overlay">CS:GO</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://th.bing.com/th/id/OIP.tq1aFPS3yJdVHkRI-3cVDgAAAA?pid=ImgDet&rs=1"
+            class="hobbies-image"
+            alt="Risk of Rain 2"
+          />
+          <div class="overlay">Risk of Rain 2</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://th.bing.com/th/id/R.47acfece5a046bb5d8034fd3016518e3?rik=4YfCEsyK%2fz%2bcjA&pid=ImgRaw&r=0"
+            class="hobbies-image"
+            alt="osu!"
+          />
+          <div class="overlay">osu!</div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade px-5 py-2 flex-wrap hobbies-content"
+        id="arcade"
+        role="tabpanel"
+        aria-labelledby="arcade-tab"
+      >
+        <div class="box">
+          <img
+            src="https://static.vocadb.net/img/tag/mainOrig/7241.png?v=3"
+            class="hobbies-image"
+            alt="maimai"
+          />
+          <div class="overlay">maimai</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://stat.profile.ameba.jp/profile_images/20170121/21/85/35/j/o074807501485002165254.jpg"
+            class="hobbies-image"
+          />
+          <div class="overlay">Chunithm</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://groovecoaster.com/images/icon.gif"
+            class="hobbies-image"
+          />
+          <div class="overlay">Groove Coaster</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://gamereport.es/wp-content/uploads/2018/11/taiko2.png"
+            class="hobbies-image"
+          />
+          <div class="overlay">太鼓の達人</div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade px-5 py-2 flex-wrap hobbies-content"
+        id="videos"
+        role="tabpanel"
+        aria-labelledby="videos-tab"
+      >
+        <h6 class="text-center text-success" style="width: 100%">
+          Some of the Youtube channels I enjoy
+        </h6>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AGIKgqPviJ3x9GiSEuQhWNKNipzDMOXrJ0Ll51xR5osXMw=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">Veritasium</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AOPolaRB8R7oQbHGTIGYF0zwHqjEoYWXd-xGC1_JEK7tOg=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">ElectroBOOM</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AOPolaTxRHy5TOlM0HXSzKkuOFmyRURjjYEUG3N8BL2P=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">Mark Rober</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AOPolaRLmRMNKIIiXGcBJoYTFhdfo-_i5GRdRFAwlZGPUQ=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">Numberphile</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/lAk48f7ez_Z78afKJbwNaH00JUE9Hct5rY0uuBcoQbDOzoypDGqyD0IJzTuZFxL_gUELRXJT=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">Disguised Toast</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AOPolaSFN-tXCkN-SFarVpA9Fggp6M6B4r6ZjDuuZuV7Rw=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">李永乐老师</div>
+        </div>
+        <div class="box">
+          <img
+            src="https://yt3.googleusercontent.com/U6n1tM-bMbzyjnW3kIrs3Xdhcyxwri__7Ftm_lYuYBvPB1BRU-Z93Zvefc8TPzMUgJly4BKk=s176-c-k-c0x00ffffff-no-rj"
+            class="hobbies-image"
+          />
+          <div class="overlay">老高與小茉 Mr & Mrs Gao</div>
+        </div>
+      </div>
     </section>
 
     <!-- script -->
@@ -167,6 +395,8 @@
     </script>
 
     <!-- custom Javascript -->
-    <script src="script.js"></script>
+    <script src="script.js">
+      document.getElementById("gaming-tab").click();
+    </script>
   </body>
 </html>
