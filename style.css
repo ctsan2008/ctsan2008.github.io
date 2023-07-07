@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   /* background-color: rgba(188, 231, 238, 0.44); */
@@ -20,6 +24,7 @@ header {
 
 .bio {
   height: auto;
+  width: 60%;
 }
 
 #skills {
@@ -60,6 +65,73 @@ header {
   width: 100%;
   min-height: 100vh;
   background-color: rgba(238, 188, 231, 0.44);
+}
+
+.hobbies {
+  padding-top: 5%;
+}
+
+.hobbies-content {
+  display: none;
+}
+
+.hobbies-btn {
+  border: 1px solid #cccccc;
+  background-color: #f1f1f1;
+}
+
+.box {
+  position: relative;
+  max-width: 19%;
+  height: auto;
+  margin: 0.2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+
+  .box {
+    max-width: 25%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .bio {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  .box {
+    max-width: 50%;
+  }
+}
+
+.hobbies-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box:hover .overlay {
+  opacity: 1;
 }
 
 .glow {
