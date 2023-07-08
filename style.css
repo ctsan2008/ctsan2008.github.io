@@ -111,7 +111,7 @@ header {
   }
 
   .box {
-    max-width: 25%;
+    max-width: 24%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -121,7 +121,7 @@ header {
   }
 
   .box {
-    max-width: 50%;
+    max-width: 49%;
   }
 }
 
