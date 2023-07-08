@@ -87,6 +87,23 @@ header {
   margin: 0.2%;
 }
 
+/* #presentation {
+  width: 100%;
+  min-height: 80vh;
+  padding-top: 5%;
+}
+
+.presentation-hover-text:hover + .hidden-text {
+  display: block;
+  color: red;
+} */
+
+#social {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #00ffb9;
+}
+
 @media only screen and (max-width: 768px) {
   .bio {
     font-size: 0.8rem;
