@@ -210,3 +210,9 @@ header {
       0 0 40px #ff4da6, 0 0 48px #ff4da6, 0 0 56px #ff4da6, 0 0 64px #ff4da6;
   }
 }
+
+.nav-link:hover {
+  border: 3px #ff0000 solid;
+  border-radius: 5px;
+}
+
